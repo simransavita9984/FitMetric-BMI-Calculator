@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #00796b;
+  width: 100%;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-center {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.container {
+  background: white;
+  margin-top: 50px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #b2dfdb;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #00796b;
+}
+
+.btn {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+.results {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.guide {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.guide h2 {
+  margin-bottom: 15px;
+  color: #004d40;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  color: white;
+}
+
+.badge.under {
+  background-color: #ff7043;
+}
+
+.badge.normal {
+  background-color: #66bb6a;
+}
+
+.badge.over {
+  background-color: #ef5350;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+   .nav-center {
+    font-size: 1.2rem;
+  }
+}
+
